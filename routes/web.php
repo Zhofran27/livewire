@@ -24,3 +24,6 @@ Route::get('/', App\Livewire\Posts\index::class)->name('posts.index');
 //posts create
 Route::get('/create', App\Livewire\Posts\Create::class)->name('posts.create');
 
+//posts edit
+Route::get('/edit/{id}', App\Livewire\Posts\Edit::class)->name('posts.edit');
+
