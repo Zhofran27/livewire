@@ -40,7 +40,8 @@ rounded shadow-sm border-0 mb-3">ADD NEW POST</a>
 <td class="text-center">
 <a href="/edit/{{ $post->id }}"wire:navigate class="btn btn-sm btn-primary">EDIT</a>
 
-<button class="btn btn-sm btn-danger">DELETE</button>
+{{-- <button class="btn btn-sm btn-danger">DELETE</button> --}}
+<button wire:click="destroy({{ $post->id }})" class="btn btn-sm btn-danger">DELETE</button>
 
 </td>
 </tr>
